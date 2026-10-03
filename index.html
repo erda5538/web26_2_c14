@@ -2,38 +2,215 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <title>HTML5 과제</title>
 
-    <title>홈페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 40px;
+        background-color: #f1f3f5;
+        font-family: Arial, sans-serif;
+        color: #222;
+      }
+
+      #container {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: white;
+        border: 1px solid #dcdfe3;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      header {
+        margin-bottom: 30px;
+      }
+
+      header h1 {
+        margin-bottom: 8px;
+        font-size: 36px;
+      }
+
+      header p {
+        color: #8a94a6;
+        letter-spacing: 3px;
+        font-size: 13px;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #d9dde3;
+        margin-top: 25px;
+      }
+
+      #chapter-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+
+      .chapter {
+        border: 1px solid #d9dde3;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .chapter h2 {
+        margin: 0;
+        padding: 18px 20px;
+        font-size: 22px;
+      }
+
+      .chapter2 h2 {
+        background-color: #eef5ff;
+      }
+
+      .chapter3 h2 {
+        background-color: #eef8f3;
+      }
+
+      .chapter4 h2 {
+        background-color: #fff3e9;
+      }
+
+      .chapter5 h2 {
+        background-color: #f2efff;
+      }
+
+      .links {
+        padding: 5px 20px;
+      }
+
+      .links a {
+        display: block;
+        padding: 11px 0;
+        border-bottom: 1px solid #e5e7eb;
+        color: #1673e6;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .links a:last-child {
+        border-bottom: none;
+      }
+
+      .links a:hover {
+        color: #0b4fa8;
+        background-color: #f8fafc;
+      }
+
+      footer {
+        margin-top: 25px;
+        padding: 20px 25px;
+        background-color: #f6f7f9;
+        border-radius: 8px;
+      }
+
+      footer h2 {
+        margin: 0 0 5px;
+        font-size: 20px;
+      }
+
+      footer p {
+        margin: 0;
+        color: #727b8c;
+      }
+    </style>
   </head>
+
   <body>
-    환영합니다
-    <br />
-    <a href="Chapter3/1text_header.html">1text_header.html</a><br />
-    <a href="Chapter3/3text_content.html">3text_content.html</a><br />
-    <a href="Chapter3/5text_anchor.html">5text_anchor.html</a><br />
-    <a href="Chapter3/10nested_list.html">10nested_list.html</a><br />
-    <a href="Chapter3/11table_basic.html">11table_basic.html</a><br />
-    <a href="Chapter3/12table_cell.html">12table_cell.html</a><br />
-    <a href="Chapter3/13table_span.html">13table_span.html</a><br />
-    <a href="Chapter3/14image_basic.html">14image_basic.html</a><br />
+    <div id="container">
+      <header>
+        <h1>프론트엔드개발 과제 모음</h1>
+        <p>FRONTEND DEVELOPMENT ASSIGNMENTS</p>
+        <hr />
+      </header>
 
-    <h2>Chapter4</h2>
-    <a href="/Chapter4/1form_basic.html">1form_basic.html</a><br />
-    <a href="/Chapter4/2note_form.html">2note_form.html</a><br />
-    <a href="/Chapter4/4form_selectbasic.html">4form_selectbasic.html</a><br />
-    <a href="/Chapter4/8note_textarea.html">8note_textarea.html</a><br />
-    <a href="/Chapter4/9space_block.html">9space_block.html</a><br />
-    <a href="/Chapter4/12space_semanticless.html">12space_semanticless</a><br />
-    <a href="/Chapter4/13space_semantic.html">13space_semantic</a><br />
+      <div id="chapter-wrap">
+        <div class="chapter chapter2">
+          <h2>Chapter2</h2>
 
-    <h2>Chapter5</h2>
-    <a href="/Chapter5/1selector_tagidclass.html">1selector_tagidclass</a><br />
-    <a href="/Chapter5/9attribute_basic.html">9attribute_basic</a><br />
-    <a href="/Chapter5/11desc_descendants.html">11desc_descendants</a><br />
-    <a href="/Chapter5/13desc_tablewithcildren.html">13desc_tablewithcildren</a
-    ><br />
-    <a href="/Chapter5/14etc_state.html">14etc_state</a><br />
+          <div class="links">
+            <a href="/Chapter2/01.HTML 페이지.html"
+              >01.HTML 페이지.html</a
+            >
+            <a href="Chapter2/01주석.html">01주석.html</a>
+            <a href="Chapter2/02HTMLPageWithStyle.html">02HTMLPageWithStyle</a>
+            <a href="Chapter2/03style.css">03style.css</a>
+            <a href="Chapter2/04HTMLPageWithLink.html"
+              >04HTMLPageWithLink.html</a
+            >
+            <a href="Chapter2/05HTMLPageWithscript.html"
+              >05HTMLPageWithscript</a
+            >
+            <a href="Chapter2/06Outerjavascript.js">06Outerjavascript</a>
+            <a href="Chapter2/07HTMLPageWithOtherScript.html">
+              07HTMLPageWithOtherScript
+            </a>
+            <a href="Chapter2/08htmlpagewitherror.html">08htmlpagewitherror</a>
+            <a href="Chapter2/09Outerjavascript_error.js">
+              09Outerjavascript_error
+            </a>
+          </div>
+        </div>
 
-    <b>2026102986 이경민</b>
+        <div class="chapter chapter3">
+          <h2>Chapter3</h2>
+
+          <div class="links">
+            <a href="Chapter3/1text_header.html">1text_header.html</a>
+            <a href="Chapter3/3text_content.html">3text_content.html</a>
+            <a href="Chapter3/5text_anchor.html">5text_anchor.html</a>
+            <a href="Chapter3/10nested_list.html">10nested_list.html</a>
+            <a href="Chapter3/11table_basic.html">11table_basic.html</a>
+            <a href="Chapter3/12table_cell.html">12table_cell.html</a>
+            <a href="Chapter3/13table_span.html">13table_span.html</a>
+            <a href="Chapter3/14image_basic.html">14image_basic.html</a>
+          </div>
+        </div>
+
+        <div class="chapter chapter4">
+          <h2>Chapter4</h2>
+          <div class="links">
+            <a href="Chapter4/1form_basic.html">1form_basic.html</a>
+            <a href="Chapter4/2note_form.html">2note_form.html</a>
+            <a href="Chapter4/4form_selectbasic.html">4form_selectbasic.html</a>
+            <a href="Chapter4/8note_textarea.html">8note_textarea.html</a>
+            <a href="Chapter4/9space_block.html">9space_block.html</a>
+            <a href="Chapter4/12space_semanticless.html"
+              >12space_semanticless</a
+            >
+            <a href="Chapter4/13space_semantic.html">13space_semantic</a>
+          </div>
+        </div>
+
+        <div class="chapter chapter5">
+          <h2>Chapter5</h2>
+          <div class="links">
+            <a href="Chapter5/1selector_tagidclass.html"
+              >1selector_tagidclass</a
+            >
+            <a href="Chapter5/9attribute_basic.html">9attribute_basic</a>
+            <a href="Chapter5/11desc_descendants.html">11desc_descendants</a>
+            <a href="Chapter5/13desc_tablewithcildren.html">
+              13desc_tablewithcildren
+            </a>
+            <a href="Chapter5/14etc_state.html">14etc_state</a>
+            <a href="Chapter5/work.html">블로그 레이아웃 구성 과제 </a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <h2>이경민</h2>
+        <p>학번 2026102986</p>
+      </footer>
+    </div>
   </body>
 </html>
